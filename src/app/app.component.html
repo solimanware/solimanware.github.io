@@ -1,0 +1,25 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img width="40" alt="Angular Logo" src="assets/logo.png" />
+  <span>Smsmware</span>
+</div>
+<!-- app.component.html -->
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div class="sketchsection section" >
+    <div #sketch></div>
+    <div class="typewriter"><h1 id="typewriter-text" #typewriter>Hello</h1></div>
+    <img class="scroll-icon" src="./../assets/scroll-icon.gif" alt="">
+  </div>
+  <div class="section" >
+    <app-projects></app-projects>
+  </div>
+  <div class="section">
+    <div class="slide">Slide 2.1</div>
+    <div class="slide">Slide 2.2</div>
+    <div class="slide">Slide 2.3</div>
+  </div>
+  <div class="section">
+    Some section4
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->
