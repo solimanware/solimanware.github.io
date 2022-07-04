@@ -5,11 +5,13 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

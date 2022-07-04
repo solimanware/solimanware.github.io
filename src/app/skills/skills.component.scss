@@ -1,0 +1,58 @@
+:host{
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+    background-color: #1d1d1d;
+    position: absolute;
+}
+footer {
+   position: relative;
+   top: -30px;
+   display: flex;
+    //background: grey;
+   .contact-links{
+    text-align: center;
+    margin-top: 20px;
+    .contact{
+        color: white;
+        margin-right: 20px;
+        margin-left: 20px;
+        
+    }
+   }
+  }
+
+  
+  
+h1{
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+    color: #70edce; 
+
+}
+.content {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    color: #70edce;
+    margin-left: calc(50% - 400px);
+  }
+  .content--item:hover {
+    color: #36454F;
+  }
+
+  .about{
+    color:white
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
