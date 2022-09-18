@@ -1,0 +1,122 @@
+main {
+  min-height: 850px;
+  position: relative;
+  overflow: hidden;
+  padding: 123px 0;
+  padding-bottom: 0;
+}
+
+.main-contant {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 15px;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  line-height: 22px;
+  position: relative;
+}
+
+.elment1 {
+  position: absolute;
+}
+
+@media (max-width: 1450px) {
+  .main-text {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-contant {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 70px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main {
+    padding-bottom: 80px;
+  }
+
+  .elment1,
+  .elment2 {
+    display: none !important;
+  }
+
+  .elment {
+    display: none;
+  }
+
+  .main-text {
+    text-align: center;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+main .app-main-sec .Photo-logo {
+  width: 450px;
+  transform: rotate(13deg);
+  animation: moveUpAndDown 5s ease infinite;
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.app-main-sec {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-text h1 {
+  color: var(--wight-color);
+  margin-bottom: 25px;
+}
+
+main .main-text p {
+  color: var(--gray-color);
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.main-text {
+  width: 90%;
+}
+
+.clints-work {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
+  align-items: center;
+}
+
+.clints-work .cli1 {
+  text-align: center;
+}
+
+.clints-work .cli1 h3 {
+  font-size: 37px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.phone-div-flow-imgs {
+  position: relative;
+}

@@ -1,11 +1,226 @@
 /* You can add global styles to this file, and also import other style files */
-@property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
+@font-face {
+  font-family: "VIP-Hakm-Bold";
+  src: url(/assets/Font/VIP-Hakm-Bold.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #313535;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff6b;
+  box-shadow: 0px 0px 30px 30px #ffffff6b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--gray-color);
+  text-transform: capitalize;
+
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Tajawal", sans-serif;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-family: "Cairo", sans-serif;
+  font-family: "VIP-Hakm-Bold";
+  color: var(--wight-color);
+}
+
+:root {
+  --main-color: #6c04ed;
+  --wight-color: #ffffff;
+  --dark-color: #0d0523;
+  --card-color: #11082c;
+  --card-light-color: #330f7e;
+  /* --scend-dark-color: #0c0520; */
+  --scend-dark-color: #190c40;
+
+  --3s-transition: 0.3s;
+}
+
+::selection {
+  background-color: #7303e367;
+}
+
+.continer {
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+
+.fcont {
+  width: 65% !important;
+}
+
+.elment1 {
+  display: block;
+  width: 60px;
+  height: 6px;
+  background: #6c04ed;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+}
+
+.elment1::after {
+  content: "";
+  width: 60px;
+  height: 6px;
+  background: #6c04ed;
+  position: absolute;
+  left: -50%;
+  transform: rotate(90deg);
+  top: 27px;
+}
+
+.elment2 {
+  display: block;
+  width: 60px;
+  height: 6px;
+  background: #6c04ed;
+  position: absolute;
+  left: -20px;
+  bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+  .continer {
+    width: 90% !important;
+    margin: 0 auto;
+    overflow: hidden;
   }
-  
-  :root {
-    --card-height: 28vh;
-    --card-width: calc(var(--card-height) / 1.2);
+}
+
+.downlod-glitch {
+  margin-top: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Rasco-Glitch {
+  transition: 0.4s;
+}
+
+.Rasco-Glitch:hover {
+  transform: scale(0.98) !important;
+}
+
+.Rasco-Glitch,
+.Rasco-Glitch:after {
+  font-size: 16px;
+  background: linear-gradient(45deg, transparent 5%, var(--main-color) 5%);
+  border: 0;
+  color: var(--wight-color);
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 129px;
+  height: 47px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Rasco-Glitch:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "Contat as";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    var(--main-color) 5%
+  );
+  text-shadow: -3px -3px 0px var(--main-color), 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.Rasco-Glitch:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
   }
+
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}

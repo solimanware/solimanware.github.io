@@ -1,0 +1,45 @@
+<section>
+  <div class="portfolio swiper-container-free-mode">
+    <div class="app-selector">
+      <swiper
+        [slidesPerView]="'auto'"
+        [spaceBetween]="30"
+        [speed]="5000"
+        [autoplay]="{
+          delay: 1,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        }"
+        [loop]="true"
+        [grabCursor]="true"
+        [mousewheel]="true"
+        [keyboard]="true"
+        [speed]="1000"
+        [navigation]="{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }"
+        [scrollbar]="{
+          el: '.swiper-scrollbar',
+          hide: false,
+          draggable: true
+        }"
+        class="app-selector swiper-wrapper"
+      >
+        <ng-template swiperSlide *ngFor="let app of apps">
+          <div class="card">
+            <img class="logo" [src]="app.image" alt="" />
+            <h3 class="title">{{ app.name }}</h3>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+
+    <div class="app-viewer">
+      <div class="virtual-mobile">
+        <iframe src="https://dawazone.com" frameborder="0"></iframe>
+        <img class="mobile-frame" src="assets/Imges/mobile-frame.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>

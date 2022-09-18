@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod":"ng build --base-href='https://smsmware.com'",
+    "build:prod": "ng build --base-href='https://smsmware.com'",
     "deploy": "npx angular-cli-ghpages --dir=dist/smsmware"
   },
   "private": true,
@@ -22,6 +22,7 @@
     "@angular/router": "^14.0.0",
     "@fullpage/angular-fullpage": "^0.0.16",
     "rxjs": "~7.5.0",
+    "swiper": "^8.4.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

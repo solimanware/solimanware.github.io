@@ -1,22 +1,6 @@
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <img width="40" alt="Angular Logo" src="assets/logo.png" />
-  <span>Smsmware</span>
-</div>
-<!-- app.component.html -->
-<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-  <div class="sketchsection section" >
-    <div #sketch></div>
-    <div class="typewriter"><h1 id="typewriter-text" #typewriter>Hello</h1></div>
-    <img class="scroll-icon" src="./../assets/scroll-icon.gif" alt="">
-  </div>
-  <div class="section" >
-    <app-projects></app-projects>
-  </div>
-  <div class="section">
-    <app-skills></app-skills>
-   
-  </div>
-</div>
-
-<!-- <router-outlet></router-outlet> -->
+<app-header></app-header>
+<app-about></app-about>
+<app-stackoverflow></app-stackoverflow>
+<app-skills></app-skills>
+<app-services></app-services>
+<app-apps></app-apps>
