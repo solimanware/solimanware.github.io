@@ -1,10 +1,7 @@
-// @import '~swiper/swiper.min.css';
-// @import '~swiper/modules/navigation/navigation.min.css';
-// @import '~swiper/modules/pagination/pagination.min.css';
+@import "~swiper/swiper.min.css";
+@import "~swiper/modules/navigation/navigation.min.css";
+@import "~swiper/modules/pagination/pagination.min.css";
 
-@import "swiper/scss";
-@import "swiper/scss/navigation";
-@import "swiper/scss/pagination";
 section {
   scroll-margin-top: 78px;
 }
@@ -53,6 +50,8 @@ section {
         display: block;
         margin: 0 auto;
         margin-top: 20%;
+        background: white;
+        padding: 2px;
         border-radius: 20%;
         box-shadow: 0 8px 10px 0 rgb(60 64 67 / 30%),
           0 1px 3px 1px rgb(60 64 67 / 15%);

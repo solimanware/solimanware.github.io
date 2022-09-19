@@ -1,1 +1,0 @@
-@property --rotate{syntax: "<angle>"; initial-value: 132deg; inherits: false;}:root{--card-height: 28vh;--card-width: calc(var(--card-height) / 1.2)}
