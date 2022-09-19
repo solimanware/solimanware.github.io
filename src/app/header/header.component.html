@@ -1,18 +1,45 @@
-<header>
+<header id="header">
   <div class="continer headr-continer">
     <a href="index.html">
       <img class="logo-headr" src="/assets/Logo/Logo4.png" alt="Logo-img" />
     </a>
     <nav>
-      <li class="active">Home</li>
-      <li>Skills</li>
-      <li>Services</li>
-      <li>Work</li>
-      <li>Why Me</li>
+      <li
+        [ngClass]="{ active: currentActive === 'home' }"
+        (click)="scrollToTop()"
+      >
+        Home
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'skills' }"
+        (click)="scrollToSection('skills')"
+      >
+        Skills
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'services' }"
+        (click)="scrollToSection('services')"
+      >
+        Services
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'portfolio' }"
+        (click)="scrollToSection('portfolio')"
+      >
+        Portfolio
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'sec5' }"
+        (click)="scrollToSection('sec5')"
+      >
+        Why Me
+      </li>
     </nav>
     <div class="start-laung">
-      <button class="Rasco-Glitch">Contat Us</button>
-      <a href="index-en.html"> <i class="fal fa-globe"></i></a>
+      <button (click)="scrollToSection('sec7')" class="Rasco-Glitch">
+        Contat Me
+      </button>
+      <a href="/"> <i class="fal fa-globe"></i></a>
     </div>
     <i class="fal fa-stream toogle-i"></i>
   </div>

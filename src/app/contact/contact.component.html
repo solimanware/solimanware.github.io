@@ -1,0 +1,90 @@
+<div id="sec7" class="sec">
+  <div class="text-top" data-aos="fade-down" data-aos-duration="800">
+    <h1>Contact Me</h1>
+    <p>
+      Bizimply allows managers and owners to keep track of their business on the
+      go. Get quick insights into who’s working
+    </p>
+  </div>
+  <div class="continer">
+    <div class="left" data-aos="flip-left">
+      <div class="map">
+        <iframe
+          title="map for our compny"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27484.135412297932!2d31.00866495!3d30.56294965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d68b68933ea3%3A0x77434af2db2fa06f!2sShebeen%20El-Kom%2C%20Qism%20Shebeen%20El-Kom%2C%20Shibin%20el%20Kom%2C%20Menofia%20Governorate!5e0!3m2!1sen!2seg!4v1663541963648!5m2!1sen!2seg"
+          width="100px"
+          height="340"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="bottom">
+        <div class="l">
+          <div class="country">Egypt</div>
+          <div class="info">
+            <div class="gps">
+              <p>Shiben Al Kom<br /></p>
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="phone">
+              +201063116380
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="phone">
+              +201063116380
+              <i class="fab fa-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="mailto:smsmware@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/smsmware"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://facebook.com/smsmware.public"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a target="_blank" href="https://twitter.com/smsmware"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="right" data-aos="flip-right">
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" #name />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" #email />
+        </div>
+        <div>
+          <label for="phone">Phone </label>
+          <input type="text" name="phone" id="phone" #phone />
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" rows="4" cols="50" #msg> </textarea>
+        </div>
+        <div>
+          <button
+            name="button"
+            id="button"
+            (click)="
+              sendEmailFromForm(name.value, email.value, phone.value, msg.value)
+            "
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

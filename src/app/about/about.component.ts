@@ -10,6 +10,7 @@ export class AboutComponent implements OnInit {
   numberOfApps = 50;
   numberOfAppUsers = 300;
   numberOfCountries = 10;
+  currentActive = "home";
   constructor() {}
 
   ngOnInit(): void {
@@ -42,5 +43,11 @@ export class AboutComponent implements OnInit {
         }
       }, interval);
     });
+  }
+  scrollToSection(section: string) {
+    //scroll to section
+    const element = document.getElementById(section);
+    element?.scrollIntoView({ behavior: "smooth" });
+    this.currentActive = section;
   }
 }

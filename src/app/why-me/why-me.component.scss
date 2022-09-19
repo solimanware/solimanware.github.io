@@ -1,0 +1,68 @@
+#sec5 {
+  /* background-color: var(--scend-dark-color); */
+  scroll-margin-top: 78px;
+  margin-top: 50px;
+}
+
+#sec5 .continer {
+  /* min-height: 100vh; */
+  margin: 0 auto !important;
+
+  padding-bottom: 100px;
+}
+
+#sec5 .continer .text-top {
+  text-align: center;
+}
+
+#sec5 .continer .text-top h1 {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+#sec5 .continer .text-top p {
+  font-size: 18;
+}
+
+#sec5 .continer .cards-sec5 {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  #sec5 .continer .cards-sec5 {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+#sec5 .continer .cards-sec5 .card {
+  background-color: var(--card-color);
+  width: 100%;
+
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  transform-origin: center;
+  cursor: pointer;
+  transition: 0.4s;
+  /*! flex-direction: row-reverse; */
+  border-radius: 10px;
+}
+
+#sec5 .continer .cards-sec5 .card:hover {
+  box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 11%);
+}
+
+#sec5 .cards-sec5 .card .icon {
+  width: 120px;
+}
+
+.left h1 {
+  font-size: 23px;
+}

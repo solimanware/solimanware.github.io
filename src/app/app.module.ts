@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 
@@ -12,6 +12,10 @@ import { StackoverflowComponent } from "./stackoverflow/stackoverflow.component"
 import { ServicesComponent } from "./services/services.component";
 import { AppsComponent } from "./apps/apps.component";
 import { SwiperModule } from "swiper/angular";
+import { FooterComponent } from "./footer/footer.component";
+import { WhyMeComponent } from "./why-me/why-me.component";
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { SwiperModule } from "swiper/angular";
     StackoverflowComponent,
     ServicesComponent,
     AppsComponent,
+    FooterComponent,
+    WhyMeComponent,
+    ShowcaseComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,5 +40,6 @@ import { SwiperModule } from "swiper/angular";
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

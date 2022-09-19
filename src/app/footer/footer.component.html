@@ -1,0 +1,94 @@
+<footer>
+  <h1>Mobile Software Engineer</h1>
+
+  <div class="continer-footer">
+    <nav class="li-footer third">
+      <li
+        [ngClass]="{ active: currentActive === 'home' }"
+        (click)="scrollToTop()"
+      >
+        Home
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'skills' }"
+        (click)="scrollToSection('skills')"
+      >
+        Skills
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'services' }"
+        (click)="scrollToSection('services')"
+      >
+        Services
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'portfolio' }"
+        (click)="scrollToSection('portfolio')"
+      >
+        Portfolio
+      </li>
+      <li
+        [ngClass]="{ active: currentActive === 'sec5' }"
+        (click)="scrollToSection('sec5')"
+      >
+        Why Me
+      </li>
+    </nav>
+
+    <a class="third" href="index.html">
+      <img
+        class="icon-logo-footer"
+        src="assets/Logo/Logo1.png"
+        alt="iconLogo"
+      />
+    </a>
+    <div class="bottom third">
+      <div class="l">
+        <div class="country">Shiben Al Kom, Egypt</div>
+        <div class="info">
+          <div class="phone">
+            <i class="fas fa-phone"></i>
+            +201063116380
+          </div>
+          <div class="phone">
+            <i class="fab fa-whatsapp"></i>
+            +201119070200
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="socila-meida soc-footer">
+    <li>
+      <a target="_blank" href="https://facebook.com/smsmware.public"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://instagram.com/prof.o.soliman"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://youtube.com/practicalJS"
+        ><i class="fab fa-youtube"></i
+      ></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://t.me/smsmware"
+        ><i class="fab fa-telegram-plane"></i
+      ></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://github.com/smsmware"
+        ><i class="fab fa-brands fa-github"></i
+      ></a>
+    </li>
+    <li>
+      <a target="_blank" href="https://linkedin.com/in/smsmware"
+        ><i class="fab fa-brands fa-linkedin"></i
+      ></a>
+    </li>
+  </nav>
+</footer>

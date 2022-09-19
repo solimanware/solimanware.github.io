@@ -1,0 +1,120 @@
+.app-phone {
+  width: 100%;
+  min-height: 716px;
+  background-color: var(--scend-dark-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.app-continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 660px;
+}
+
+.app {
+  width: 100%;
+  height: 400px;
+  background-color: var(--card-color);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.app-img {
+  width: 320px;
+  -webkit-filter: drop-shadow(35px 10px 20px #00000087);
+  filter: drop-shadow(35px 10px 20px #00000087);
+}
+
+.app-text {
+  text-align: center;
+  color: var(--wight-color);
+}
+
+.text-h3-star {
+  font-size: 16px;
+}
+
+.stares-div {
+  display: flex;
+  justify-content: center;
+}
+
+.stares-div .stare {
+  cursor: pointer;
+}
+
+.img-app-dowinlod {
+  margin-top: 20px;
+}
+
+.img-app-dowinlod img {
+  cursor: pointer;
+  background-color: #2a2d2c;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .app {
+    display: block;
+  }
+
+  .app-img {
+    position: absolute;
+    top: -223px;
+    left: 50%;
+    transform: translateX(-50%) !important;
+  }
+
+  .app-text {
+    position: relative;
+    z-index: 5;
+    bottom: -230px;
+    padding: 20px 0;
+    color: var(--wight-color);
+  }
+
+  .app-text::after {
+    content: "";
+    width: 100%;
+    height: 201px;
+    background-color: #11082c59;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+    box-shadow: 0px -20px 20px #00000047;
+    -webkit-backdrop-filter: blur(54px);
+    -moz-backdrop-filter: blur(54px);
+    -ms-backdrop-filter: blur(54px);
+    backdrop-filter: blur(54px);
+    border-radius: 0 0 5px 5px;
+  }
+
+  .app-continer {
+    height: 917px;
+  }
+
+  .img-app-dowinlod {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  .img-app-dowinlod img {
+    width: 80%;
+  }
+
+  .stares-div {
+    transform: scale(0.7);
+  }
+
+  .app-text::after {
+    height: 377px;
+  }
+}

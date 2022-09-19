@@ -1,14 +1,13 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
 
 @Component({
-  selector: "app-header",
-  templateUrl: "./header.component.html",
-  styleUrls: ["./header.component.scss"],
+  selector: "app-footer",
+  templateUrl: "./footer.component.html",
+  styleUrls: ["./footer.component.scss"],
 })
-export class HeaderComponent implements OnInit {
+export class FooterComponent implements OnInit {
   currentActive = "home";
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {}
   scrollToSection(section: string) {
