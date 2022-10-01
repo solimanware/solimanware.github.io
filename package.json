@@ -1,14 +1,14 @@
 {
-  "name": "smsmware",
-  "version": "0.0.0",
+  "name": "solimanware",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod": "ng build --base-href='https://smsmware.com'",
-    "deploy": "npx angular-cli-ghpages --dir=dist/smsmware"
+    "build:prod": "ng build --base-href='https://solimanware.com'",
+    "deploy": "echo 'solimanware.com' > dist/solimanware/CNAME; npx angular-cli-ghpages --dir=dist/solimanware"
   },
   "private": true,
   "dependencies": {

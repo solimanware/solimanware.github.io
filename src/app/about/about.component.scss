@@ -120,3 +120,10 @@ main .main-text p {
 .phone-div-flow-imgs {
   position: relative;
 }
+
+.cta-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}

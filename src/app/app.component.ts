@@ -13,7 +13,7 @@ declare const Sketch: any;
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent implements AfterViewInit {
-  title = "smsmware";
+  title = "solimanware";
   config: any;
   fullpage_api: any;
   @ViewChild("sketch") sketch: any;
@@ -177,7 +177,7 @@ export class AppComponent implements AfterViewInit {
         "Hello... 👋😄",
         "How are you..?",
         "My name is Osama Soliman",
-        "@smsmware",
+        "@solimanware",
         "And I am open to new challenges 💪",
         "So do you have a cool challenge for me 😉?",
       ],
