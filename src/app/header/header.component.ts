@@ -8,6 +8,7 @@ import { Router } from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
   currentActive = "home";
+  shouldShowMobileMenu = false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
@@ -24,5 +25,8 @@ export class HeaderComponent implements OnInit {
       behavior: "smooth",
     });
     this.currentActive = "home";
+  }
+  toggleMobileMenu() {
+    this.shouldShowMobileMenu = !this.shouldShowMobileMenu;
   }
 }

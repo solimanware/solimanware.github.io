@@ -41,19 +41,54 @@
       </button>
       <a href="/"> <i class="fal fa-globe"></i></a>
     </div>
-    <i class="fal fa-stream toogle-i"></i>
+    <i (click)="toggleMobileMenu()" class="fal fa-stream toogle-i"></i>
   </div>
 </header>
 
-<div class="li-phone">
-  <i class="fal fa-times close-ico-phone"></i>
+<div
+  [ngClass]="{
+    active: shouldShowMobileMenu
+  }"
+  class="li-phone"
+>
+  <i (click)="toggleMobileMenu()" class="fal fa-times close-ico-phone"></i>
   <nav class="nav-phone">
-    <li class="active">Home</li>
-    <li>Skills</li>
-    <li>Service</li>
-    <li>Work</li>
-    <li>Why Me</li>
-    <li>Contat Us</li>
+    <li
+      [ngClass]="{ active: currentActive === 'home' }"
+      (click)="scrollToTop()"
+    >
+      Home
+    </li>
+    <li
+      [ngClass]="{ active: currentActive === 'skills' }"
+      (click)="scrollToSection('skills')"
+    >
+      Skills
+    </li>
+    <li
+      [ngClass]="{ active: currentActive === 'services' }"
+      (click)="scrollToSection('services')"
+    >
+      Services
+    </li>
+    <li
+      [ngClass]="{ active: currentActive === 'portfolio' }"
+      (click)="scrollToSection('portfolio')"
+    >
+      Portfolio
+    </li>
+    <li
+      [ngClass]="{ active: currentActive === 'sec5' }"
+      (click)="scrollToSection('sec5')"
+    >
+      Why Me
+    </li>
+    <li
+      [ngClass]="{ active: currentActive === 'sec7' }"
+      (click)="scrollToSection('sec7')"
+    >
+      Contat Me
+    </li>
   </nav>
 
   <a class="en-li" href="index-en.html">
