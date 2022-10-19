@@ -2,7 +2,7 @@
   <h1>Mobile Software Engineer</h1>
 
   <div class="continer-footer">
-    <nav class="li-footer third">
+    <nav class="li-footer">
       <li
         [ngClass]="{ active: currentActive === 'home' }"
         (click)="scrollToTop()"
@@ -34,26 +34,18 @@
         Why Me
       </li>
     </nav>
+    <div class="logo-container">
+      <a class="icon-logo-footer" href="index.html">
+        <img src="assets/Logo/Logo1.png" alt="iconLogo" />
+      </a>
+    </div>
 
-    <a class="third" href="index.html">
-      <img
-        class="icon-logo-footer"
-        src="assets/Logo/Logo1.png"
-        alt="iconLogo"
-      />
-    </a>
-    <div class="bottom third">
-      <div class="l">
-        <div class="country">Shiben Al Kom, Egypt</div>
-        <div class="info">
-          <div class="phone">
-            <i class="fas fa-phone"></i>
-            +201063116380
-          </div>
-          <div class="phone">
-            <i class="fab fa-whatsapp"></i>
-            +201119070200
-          </div>
+    <div class="bottom details-container">
+      <div class="country">Shiben Al Kom, Egypt</div>
+      <div class="info">
+        <div class="phone">
+          +201063116380
+          <i class="fas fa-phone"></i>
         </div>
       </div>
     </div>
