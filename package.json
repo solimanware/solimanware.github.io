@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:prod": "ng build --base-href='https://solimanware.com'",
-    "deploy": "echo 'solimanware.com' > dist/solimanware/CNAME; npx angular-cli-ghpages --dir=dist/solimanware"
+    "deploy": "npx angular-cli-ghpages -c 'solimanware.com' --dir=dist/solimanware -S"
   },
   "private": true,
   "dependencies": {
