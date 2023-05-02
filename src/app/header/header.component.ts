@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
     const element = document.getElementById(section);
     element?.scrollIntoView({ behavior: "smooth" });
     this.currentActive = section;
+    this.shouldShowMobileMenu = false;
   }
   scrollToTop() {
     window.scroll({
@@ -25,8 +26,13 @@ export class HeaderComponent implements OnInit {
       behavior: "smooth",
     });
     this.currentActive = "home";
+    this.shouldShowMobileMenu = false;
   }
   toggleMobileMenu() {
     this.shouldShowMobileMenu = !this.shouldShowMobileMenu;
+  }
+
+  comingSoon(){
+    alert("Coming Soon");
   }
 }

@@ -122,3 +122,14 @@ footer .gps {
     display: block;
   }
 }
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.phone{
+  border-bottom: 1px solid white;
+  width: fit-content;
+}
