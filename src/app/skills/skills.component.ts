@@ -1,12 +1,7 @@
 import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnInit,
-  ViewChild,
+  Component
 } from "@angular/core";
 
-declare const TagCloud: any;
 @Component({
   selector: "app-skills",
   templateUrl: "./skills.component.html",
