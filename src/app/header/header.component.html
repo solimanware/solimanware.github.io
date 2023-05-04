@@ -1,36 +1,41 @@
-<header id="header">
+<header id="header" class="header">
   <div class="continer headr-continer">
     <a href="index.html">
       <img class="logo-headr" src="/assets/images/logos/header-light.png" alt="Logo-img" />
     </a>
-    <nav>
+    <nav class="nav-menu">
       <li
         [ngClass]="{ active: currentActive === 'home' }"
         (click)="scrollToTop()"
+        class="nav-item"
       >
         Home
       </li>
       <li
         [ngClass]="{ active: currentActive === 'skills' }"
         (click)="scrollToSection('skills')"
+        class="nav-item"
       >
         Skills
       </li>
       <li
         [ngClass]="{ active: currentActive === 'services' }"
         (click)="scrollToSection('services')"
+        class="nav-item"
       >
         Services
       </li>
       <li
         [ngClass]="{ active: currentActive === 'portfolio' }"
         (click)="scrollToSection('portfolio')"
+        class="nav-item"
       >
         Portfolio
       </li>
       <li
         [ngClass]="{ active: currentActive === 'sec5' }"
         (click)="scrollToSection('sec5')"
+        class="nav-item"
       >
         Why Me
       </li>
@@ -49,51 +54,52 @@
   [ngClass]="{
     active: shouldShowMobileMenu
   }"
-  class="li-phone"
+  class="li-phone mobile-menu"
 >
   <i (click)="toggleMobileMenu()" class="fal fa-times close-ico-phone"></i>
-  <nav class="nav-phone">
+  <nav class="nav-menu">
     <li
       [ngClass]="{ active: currentActive === 'home' }"
       (click)="scrollToTop()"
+      class="nav-item"
     >
       Home
     </li>
     <li
       [ngClass]="{ active: currentActive === 'skills' }"
       (click)="scrollToSection('skills')"
+      class="nav-item"
     >
       Skills
     </li>
     <li
       [ngClass]="{ active: currentActive === 'services' }"
       (click)="scrollToSection('services')"
+      class="nav-item"
     >
       Services
     </li>
     <li
       [ngClass]="{ active: currentActive === 'portfolio' }"
       (click)="scrollToSection('portfolio')"
+      class="nav-item"
     >
       Portfolio
     </li>
     <li
       [ngClass]="{ active: currentActive === 'sec5' }"
       (click)="scrollToSection('sec5')"
+      class="nav-item"
     >
       Why Me
     </li>
     <li
       [ngClass]="{ active: currentActive === 'sec7' }"
       (click)="scrollToSection('sec7')"
+      class="nav-item"
     >
       Contat Me
     </li>
   </nav>
 
-  <a class="en-li" (click)="comingSoon()">
-    <i class="fal fa-globe"></i> Arabic Lang</a
-  >
-
-  
 </div>

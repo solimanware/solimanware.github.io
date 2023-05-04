@@ -1,69 +1,85 @@
+$white-color: #ffffff;
+$gray-color: #eeeeee;
+
 main {
   min-height: 780px;
   position: relative;
   overflow: hidden;
-  padding: 123px 0;
-  padding-bottom: 0;
-}
-.intro{
-  text-transform: none;
-}
+  padding: 123px 0 0;
 
-.main-contant {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-  gap: 15px;
-  align-items: center;
-  position: relative;
-  z-index: 5;
-  line-height: 22px;
-  position: relative;
-}
-
-.elment1 {
-  position: absolute;
-}
-
-@media (max-width: 1450px) {
-  .main-text {
-    width: 90% !important;
+  .intro {
+    text-transform: none;
   }
-}
 
-@media (max-width: 1050px) {
   .main-contant {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    line-height: 22px;
+
+    .elment1 {
+      position: absolute;
+    }
+  }
+
+  .app-main-sec {
+    position: relative;
     display: flex;
-    flex-direction: column-reverse;
-  }
+    justify-content: center;
+    align-items: center;
 
-  main {
-    padding-bottom: 80px;
-  }
-
-  .elment1,
-  .elment2 {
-    display: none !important;
-  }
-
-  .elment {
-    display: none;
+    .Photo-logo {
+      width: 450px;
+      transform: rotate(13deg);
+      animation: moveUpAndDown 5s ease infinite;
+    }
   }
 
   .main-text {
-    text-align: center;
-    width: 100% !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+    width: 90%;
 
-main .app-main-sec .Photo-logo {
-  width: 450px;
-  transform: rotate(13deg);
-  animation: moveUpAndDown 5s ease infinite;
+    h1 {
+      color: $white-color;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: $gray-color;
+      margin-bottom: 20px;
+    }
+
+    .clints-work {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      gap: 30px;
+      align-items: center;
+
+      .cli1 {
+        text-align: center;
+
+        h3 {
+          font-size: 37px;
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .phone-div-flow-imgs {
+      position: relative;
+    }
+
+    .cta-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 300px;
+    }
+  }
 }
 
 @keyframes moveUpAndDown {
@@ -80,53 +96,37 @@ main .app-main-sec .Photo-logo {
   }
 }
 
-.app-main-sec {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 1450px) {
+  main {
+    .main-text {
+      width: 90% !important;
+    }
+  }
 }
 
-main .main-text h1 {
-  color: var(--wight-color);
-  margin-bottom: 25px;
-}
+@media (max-width: 1050px) {
+  main {
+    padding-bottom: 80px;
 
-main .main-text p {
-  color: var(--gray-color);
-  margin-bottom: 10px;
-  margin-bottom: 20px;
-}
+    .main-contant {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      gap: 70px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
-.main-text {
-  width: 90%;
-}
+    .elment1,
+    .elment2,
+    .elment {
+      display: none !important;
+    }
 
-.clints-work {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  gap: 30px;
-  align-items: center;
-}
-
-.clints-work .cli1 {
-  text-align: center;
-}
-
-.clints-work .cli1 h3 {
-  font-size: 37px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.phone-div-flow-imgs {
-  position: relative;
-}
-
-.cta-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 300px;
+    .main-text {
+      text-align: center;
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
