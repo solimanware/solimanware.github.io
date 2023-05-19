@@ -6,7 +6,7 @@
     <title>Osama Soliman (Software Engineer) - solimanware</title>
     <base href="./" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="assets/images/logos/logo.jpg" />
+    <link rel="icon" type="image/x-icon" href="assets/images/logos/logo.webp" />
     <!-- Meta Tags -->
     <meta
       name="title"
@@ -32,7 +32,7 @@
     />
     <meta
       name="image"
-      content="https://solimanware.com/assets/images/fb-pic.jpg"
+      content="https://solimanware.com/assets/images/fb-pic.webp"
     />
     <!-- Schema.org for Google -->
     <meta
@@ -45,7 +45,7 @@
     />
     <meta
       itemprop="image"
-      content="https://solimanware.com/assets/images/fb-pic.jpg"
+      content="https://solimanware.com/assets/images/fb-pic.webp"
     />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
@@ -61,7 +61,7 @@
     <meta name="twitter:creator" content="@solimanware" />
     <meta
       name="twitter:image:src"
-      content="https://solimanware.com/assets/images/wide-pic.jpg"
+      content="https://solimanware.com/assets/images/wide-pic.webp"
     />
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta
@@ -74,7 +74,7 @@
     />
     <meta
       name="og:image"
-      content="https://solimanware.com/assets/images/fb-pic.jpg"
+      content="https://solimanware.com/assets/images/fb-pic.webp"
     />
     <meta name="og:url" content="https://solimanware.com" />
     <meta name="og:site_name" content="solimanware" />
@@ -85,37 +85,27 @@
     <meta
       name="image"
       property="og:image"
-      content="https://solimanware.com/assets/images/wide-pic.jpg"
+      content="https://solimanware.com/assets/images/wide-pic.webp"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
+    
 
     <link
       rel="shortcut icon"
-      href="/assets/images/logos/logo.jpg"
+      href="/assets/images/logos/logo.webp"
       type="image/x-icon"
     />
 
-    <!--  Google  Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <style>
       html,
       body {
         margin: 0;
         padding: 0;
+        background: #0d0523;
       }
     </style>
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/images/me.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logos/header-light.webp" type="image/webp">
   </head>
   <body>
     <app-root></app-root>

@@ -12,6 +12,9 @@ $transition-duration: 0.3s;
     src: url(/assets/fonts/VIP-Hakm-Bold.ttf);
     font-style: normal;
     font-weight: 100;
+    font-display: swap;
+
+
 }
 
 @mixin media($type, $value) {
