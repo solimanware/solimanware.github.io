@@ -127,16 +127,16 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
 }
-.Rasco-Glitch {
+.glitch {
   transition: 0.4s;
 }
 
-.Rasco-Glitch:hover {
+.glitch:hover {
   transform: scale(0.98) !important;
 }
 
-.Rasco-Glitch,
-.Rasco-Glitch:after {
+.glitch,
+.glitch:after {
   font-size: 16px;
   background: linear-gradient(45deg, transparent 5%, $main-color 5%);
   border: 0;
@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-.Rasco-Glitch:after {
+.glitch:after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 0 0);
   --slice-2: inset(50% -6px 30% 0);
@@ -181,7 +181,7 @@ body::-webkit-scrollbar-thumb {
   clip-path: var(--slice-0);
 }
 
-.Rasco-Glitch:hover:after {
+.glitch:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
