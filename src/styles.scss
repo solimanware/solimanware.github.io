@@ -52,7 +52,6 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
   text-decoration: none;
   color: $gray-color;
-  text-transform: capitalize;
 
   font-family: "M PLUS 1 Code", sans-serif;
   font-family: "Montserrat", sans-serif;
@@ -61,6 +60,13 @@ body::-webkit-scrollbar-thumb {
   font-family: "Cairo", sans-serif;
   font-family: "VIP-Hakm-Bold";
   color: $white-color;
+}
+
+.text-top{
+  text-align: center;
+  h1{
+    font-size:38px;
+  }
 }
 
 ::selection {

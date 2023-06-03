@@ -14,6 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { WhyMeComponent } from "./why-me/why-me.component";
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ContactComponent } from './contact/contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     SwiperModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

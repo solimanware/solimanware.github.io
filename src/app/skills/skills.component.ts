@@ -1,6 +1,5 @@
-import {
-  Component
-} from "@angular/core";
+import { Component } from "@angular/core";
+import { skills } from "./skills";
 
 @Component({
   selector: "app-skills",
@@ -8,6 +7,7 @@ import {
   styleUrls: ["./skills.component.scss"],
 })
 export class SkillsComponent {
+  skills = skills;
   constructor() {}
   ngOnInit(): void {}
 }

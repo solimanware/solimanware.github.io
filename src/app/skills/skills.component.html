@@ -7,38 +7,19 @@
         challenges.
       </p>
     </div>
-    <div class="skiils-div">
+    <div class="skills-div">
       <div class="skill-img">
         <img
           src="assets/images/me.webp"
           class="skills-img img-pro"
-          alt="Skiils-img"
+          alt="Skills-img"
         />
-        <span class="skills-flow sj1">JavaScript</span>
-        <span class="skills-flow sj2">CSS</span>
-        <span class="skills-flow sj3">HTML</span>
-        <span class="skills-flow sj4">C#</span>
-        <span class="skills-flow sj5">TypeScript</span>
-        <span class="skills-flow sj6">Angular</span>
-        <span class="skills-flow sj7">Git</span>
-        <span class="skills-flow sj8">GitHub</span>
-        <span class="skills-flow sj9">Node.js</span>
-        <span class="skills-flow sj10">Express.js</span>
-        <span class="skills-flow sj11">Firebase</span>
-        <span class="skills-flow sj12">MongoDB</span>
-        <span class="skills-flow sj13">jQuery</span>
-        <span class="skills-flow sj14">Material-UI</span>
-        <span class="skills-flow sj15">Bootstrap</span>
-        <span class="skills-flow sj16">SASS</span>
-        <span class="skills-flow sj17">Sketch</span>
-        <span class="skills-flow sj18">Adobe Photoshop</span>
-        <span class="skills-flow sj19">Ionic</span>
-        <span class="skills-flow sj20">Capacitor</span>
-        <span class="skills-flow sj21">PhoneGap</span>
-        <span class="skills-flow sj22">SwiftUI</span>
-        <span class="skills-flow sj23">Moment</span>
-        <span class="skills-flow sj24">Chart.js</span>
-        <span class="skills-flow sj25">Fullpage.js</span>
+        <span class="skills-flow skill" *ngFor="let skill of skills" [ngStyle]="{
+          top: skill.top,
+          left: skill.left,
+          bottom: skill.bottom,
+          right: skill.right
+        }">{{skill.name}}</span>
       </div>
     </div>
   </div>

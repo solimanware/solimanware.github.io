@@ -12,7 +12,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2555;
+  z-index: 6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,36 +101,42 @@ nav {
     }
   }
 }
-
-@media (min-width: 1150px) {
-  .toogle-i {
-    display: none !important;
+@media (min-width: 700px) {
+  header {
+    .menu-icon {
+      display: none;
+    }
   }
 }
 
+.menu-icon{
+
+  font-size: 25px;
+}
 .li-phone {
   position: fixed;
   left: 0;
-  z-index: 5555;
+  z-index: 7;
   width: 100%;
   height: 100%;
   background-color: #0b0b15c2;
   backdrop-filter: blur(20px);
   display: grid;
-  grid-template-rows: 1fr 10% 10%;
-  gap: 10px;
-  top: -110%;
+  grid-template-rows: 1fr 0 0;
+  gap: 0px;
+  top: 0;
   transition: 0.5s;
-
-  .nav-menu{
+  display: none;
+  .nav-menu {
     display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 
   &.active {
+    display: grid;
     top: 0;
   }
 
@@ -161,7 +167,7 @@ grid-row-gap: 0px;
     }
   }
 
-  .close-ico-phone {
+  .close-icon {
     position: absolute;
     left: 50%;
     top: 0;

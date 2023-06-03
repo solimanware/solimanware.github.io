@@ -46,7 +46,7 @@
       </button>
       <a (click)="comingSoon()"> <i class="fal fa-globe"></i></a>
     </div>
-    <i (click)="toggleMobileMenu()" class="fal fa-stream toogle-i"></i>
+    <fa-icon class="menu-icon" (click)="toggleMobileMenu()" [icon]="faBars"></fa-icon>
   </div>
 </header>
 
@@ -56,7 +56,7 @@
   }"
   class="li-phone mobile-menu"
 >
-  <i (click)="toggleMobileMenu()" class="fal fa-times close-ico-phone"></i>
+<fa-icon class="close-icon" (click)="toggleMobileMenu()" [icon]="faClose"></fa-icon>
   <nav class="nav-menu">
     <li
       [ngClass]="{ active: currentActive === 'home' }"
