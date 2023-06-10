@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit {
     phone: string,
     message: string
   ) {
-    const myEmail = "solimanware@gmail.com";
+    const myEmail = "osama@solimanware.com";
     window.open(
       `mailto:${myEmail}?subject=Contact from ${name} - ${email} - ${phone}&body=${message}`
     );
